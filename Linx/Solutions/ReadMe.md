@@ -1,4 +1,4 @@
-# Linx v5.22 (v6.6 Comming Soon)
+# Linx
 
 ## Solutions (Common)
 
@@ -9,7 +9,7 @@ For maintainability several solutions were created to contain common functionali
 
 ### Dependencies
 
-####Core
+__Core__
 * Require Linx Server - v5.22
 * Require MSSQL Server 2012 or Newer
 * Require __911Linx__ Database
@@ -19,11 +19,11 @@ For maintainability several solutions were created to contain common functionali
 ### Installing
 
 * Install Database using provided TSQL (Order: DBCreate,Tables,Views,StoredProcedures,SeedData)
+* Perform any modifications needed to SeedData to fit your deployment
 * Install SeedData for the above solution dependencies
 * Install Linx Server and use default port :8080 (if other port is used please update all solution settings and seed data accordingly)
 * Login to Linx Server and upload solutions 
 * Modify Settings in each solution for your environment
-* Any modifications needed to SeedData to fit your deployment
 
 ### Executing program
 
@@ -37,9 +37,6 @@ You will only need to load the SeedData that correlates to the solution(s) your 
 ## Authors
 
 Summit County 911 Dispatch Center Dev Team
-
-ex. R Spencer Levin
-ex. [@DBA]
 
 ## License
 
