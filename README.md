@@ -1,6 +1,4 @@
-# PublicSafety
-
-Summit County 911 Dispatch Center
+# Summit County 911 Dispatch Center
 Frisco, Colorado
 
 ## Description
