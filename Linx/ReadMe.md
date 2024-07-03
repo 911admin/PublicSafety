@@ -1,4 +1,4 @@
-# Linx v5.22
+# Linx
 
 Summit County 911 Center uses [Linx](https://linx.software/) as an easy to use software integration platform for many of our third party interfaces.
 
