@@ -8,7 +8,7 @@ This repository was created to assist and share our integration solutions with o
 
 ## Getting Started
 
-All solutions provided here are managed and configured via the [911Linx] mssql database include within this repository. You will need to execute the tsql scripts to create the database locally before being able to start using the provided linx solutions.
+All solutions provided here are managed and configured via the [911Linx] mssql database included within this repository. You will need to execute the tsql scripts to create the database locally before being able to start using the provided linx solutions.
 
 ### Dependencies
 
@@ -18,27 +18,26 @@ All solutions provided here are managed and configured via the [911Linx] mssql d
 ### Installing
 
 * Install Database using provided TSQL (Order: DBCreate,Tables,Views,StoredProcedures,SeedData)
+* Perform any modifications needed to SeedData to fit your deployment
 * Install Linx Server and use default port :8080 (if other port is used please update all solution settings and seed data accordingly)
 * Login to Linx Server and upload solutions 
 * Modify Settings in each solution for your environment
-* Any modifications needed to SeedData to fit your deployment
 
 ### Executing program
 
-* Enable the soluton once desired modifications are made
+* Enable the soluton(s) once desired modifications are made
 
 ## Help
 
 All solutions are integrated with the [911Linx] database and will not work correctly unless accessible.
 You will only need to load the SeedData that correlates to the solution(s) your interested in running.
 
-
 ## Authors
 
 Summit County 911 Dispatch Center Dev Team
 
-ex. R Spencer Levin
-ex. [@DBA]
+* R Spencer Levin
+* [DBA]
 
 ## License
 
