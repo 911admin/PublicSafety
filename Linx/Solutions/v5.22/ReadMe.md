@@ -22,7 +22,7 @@ New World Systems is a Law/Fire RMS system (now owned by Tyler Technologies) tha
 
 We use a utility server that executes a powershell.exe command using the Invoke_WebRequest commandlet on a 1 minute schedule to make the timestamp request.
 
-####Additional Installation
+__Additional Installation__
 * Update the sql query under Database->Process->SqlIncidentsByCriteria
 * Update the sql query under Database->Process->SqlIncidentByIncidentNumber
 
@@ -30,7 +30,7 @@ We use a utility server that executes a powershell.exe command using the Invoke_
 
 First Due is an online Pre-Planner application used by fire fighters. They have an incident dashboard that can take live incident data and overlay any provisioned pre-planning done by that organization. This solution extracts _live_ incident data from CAD and publishes it to the FirstDue API for realtime use.
 
-####Additional Installation
+__Additional Installation__
 * Update the sql query under Database->Process->SqlIncidentsByCriteria
 * Update the sql query under Database->Process->SqlIncidentByIncidentNumber
 
@@ -38,25 +38,25 @@ First Due is an online Pre-Planner application used by fire fighters. They have 
 
 Pioneer is a judicial management application for tickets/citations issues by a municipality. This solution is a GUI wrapper for a powershell script that extracts and submits tickets/citations to the Pioneer API. In this manner the interface can be manually executed to perform one-off or bulk citation exports, as well as be executed on an automatic schedule by using services like Windows Task Schedular.
 
-####Additional Installation
+__Additional Installation__
 * You will have to provide the powershell script to be executed by this solution and wire it in using the solution __Settings__.
 
 ### Dependencies
 
-####Core
+__Core__
 * Require Linx Server - v5.22
 * Require MSSQL Server 2012 or Newer
 * Require __911Linx__ Database
 * Require __911Linx__ Solution
 * Require __911DataServices__ Solution
 
-####CodeRed
+__CodeRed__
 * __CORE__
 * Require __911CodeRed__ Solution
 * Require __APICodeRed__ Solution
 * Require __APIC2C__ Solution
 
-####FirstDue
+__FirstDue__
 * __CORE__
 * Require __911FirstDue__ Solution
 * Require __APIFirstDue__ Solution
@@ -64,11 +64,11 @@ Pioneer is a judicial management application for tickets/citations issues by a m
 ### Installing
 
 * Install Database using provided TSQL (Order: DBCreate,Tables,Views,StoredProcedures,SeedData)
+* Perform any modifications needed to SeedData to fit your deployment
 * Install SeedData for the above solution dependencies
 * Install Linx Server and use default port :8080 (if other port is used please update all solution settings and seed data accordingly)
 * Login to Linx Server and upload solutions 
 * Modify Settings in each solution for your environment
-* Any modifications needed to SeedData to fit your deployment
 
 ### Executing program
 
@@ -84,8 +84,8 @@ You will only need to load the SeedData that correlates to the solution(s) your 
 
 Summit County 911 Dispatch Center Dev Team
 
-ex. R Spencer Levin
-ex. [@DBA]
+R Spencer Levin
+[DBA]
 
 ## License
 
