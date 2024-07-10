@@ -12,7 +12,7 @@ For maintainability several solutions were created to contain common functionali
 CodeRed is a reverse 911 notification system that supports multiple forms of transport media (SMS,Email,Voice,Mobile). The CodeRed solution facilitates handling a message request (see _data dictionary_) by parsing an xml or json payload and building the necessary CodeRed notification components to compose and launch a codered message.
 It currently supports the QuickLaunch, Tone, and Scenario notification types along with SMS,Email,Voice,Mobile notification mediums.
 
-####Additional Installation
+__Additional Installation__
 * If not using the C2C acknowledgment workflow you can skip installing the __APIC2C__ solution followed by removing the _SendAck_ and _SendUpdate_ functions from the _ProcessMessageCodeRed_ function in the 911CodeRed solution.
 * If not using the __911DataServices__ solution, you will need to replace the _RESTRequest_ found in Main->Process->Helpers->_Replace_Message_Body_Incident_Detail function with a _ExecuteSQL_ database plugin in the Linx designer in order to fetch your desired Incident record.
 
